@@ -87,50 +87,46 @@ def predict_text():
 
 
 # FROM PREVIOUS STAGE
-"""
-def print_text():
-    global text
-    sentence = []
-    for index in range(100):
-        if (index + 1) % 10 == 0:
-            sentence.append(text[index])
-            print(*sentence, sep=" ")
-            sentence.clear()
-        else:
-            sentence.append(text[index])
-"""
+# def print_text():
+#     global text
+#     sentence = []
+#     for index in range(100):
+#         if (index + 1) % 10 == 0:
+#             sentence.append(text[index])
+#             print(*sentence, sep=" ")
+#             sentence.clear()
+#         else:
+#             sentence.append(text[index])
 
-"""
-def display_index():
-    global end_program
-    word_input = input()
+# def display_index():
+#     global end_program
+#     word_input = input()
 
-    if word_input == "exit":
-        end_program = True
-    else:
-        print(f"Head: {word_input}")
-        try:
+#     if word_input == "exit":
+#         end_program = True
+#     else:
+#         print(f"Head: {word_input}")
+#         try:
             # FROM PREVIOUS STAGE (1)
             # print(tokens_list[int(index_input)])
 
             # FROM PREVIOUS STAGE (2)
             # print(f"Head: {bigram_collection[int(index_input)][0]}    \
-            Tail: {bigram_collection[int(index_input)][1]} ")
+        #     Tail: {bigram_collection[int(index_input)][1]} ")
 
-            tails = tail_count_dict[word_input]
+        #     tails = tail_count_dict[word_input]
 
-            for frequency in tails:
-                print(f"Tail: {frequency[0]}    Count: {frequency[1]}")
-            print()
-        except IndexError:
-            print("Index Error. Please input a value that is not greater than the number of all bigrams.\n")
-        except TypeError:
-            print("Type Error. Please input an integer.\n")
-        except ValueError:
-            print("ValueError. Please input an integer\n")
-        except KeyError:
-            print("Key Error. The requested word is not in the model. Please input another word.\n")
-"""
+        #     for frequency in tails:
+        #         print(f"Tail: {frequency[0]}    Count: {frequency[1]}")
+        #     print()
+        # except IndexError:
+        #     print("Index Error. Please input a value that is not greater than the number of all bigrams.\n")
+        # except TypeError:
+        #     print("Type Error. Please input an integer.\n")
+        # except ValueError:
+        #     print("ValueError. Please input an integer\n")
+        # except KeyError:
+        #     print("Key Error. The requested word is not in the model. Please input another word.\n")
 
 # while not end_program:
 #    display_index()
